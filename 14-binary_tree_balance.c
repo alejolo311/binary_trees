@@ -9,7 +9,7 @@ size_t binary_tree_height(const binary_tree_t *tree)
 {
 	if (tree == NULL)
 		return (0);
-	return (meausure(tree) - 1);
+	return (measure(tree) - 1);
 }
 /**
  * measure - helper
