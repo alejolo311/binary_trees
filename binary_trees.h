@@ -49,7 +49,7 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 
 
 /* Helpers */
-size_t meausure(const binary_tree_t *tree);
+size_t measure(const binary_tree_t *tree);
 int max(int a, int b);
 
 #endif /* BINARY_T_H */

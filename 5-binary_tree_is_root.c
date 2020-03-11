@@ -7,10 +7,11 @@
  */
 int binary_tree_is_root(const binary_tree_t *node)
 {
-    int isRoot;
+	int isRoot;
+
 	if (node == NULL)
 		return (0);
 
-    isRoot = !node->parent;
+	isRoot = !node->parent;
 	return (isRoot);
 }
