@@ -7,7 +7,7 @@
 int binary_tree_is_complete(const binary_tree_t *tree)
 {
 	unsigned int i = 0;
-    size_t size;
+	size_t size;
 
 	if (tree == NULL)
 		return (0);
@@ -24,14 +24,15 @@ int binary_tree_is_complete(const binary_tree_t *tree)
  */
 int check(const binary_tree_t *tree, unsigned int index, size_t size)
 {
-    int isComplete = 0;
+	int isComplete = 0;
+
 	if (tree == NULL)
 		return (1);
 
 	if (index >= size)
 		return (0);
 
-    isComplete = check(tree->left, 2 * index + 1, size) &&
+	isComplete = check(tree->left, 2 * index + 1, size) &&
 		check(tree->right, 2 * index + 2, size);
 	return (isComplete);
 }
